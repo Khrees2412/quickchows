@@ -32,7 +32,7 @@ function Footer (){
                           </li>
                         <li className="nav-item">
                             <Link to={"/contact"} className="nav-link">
-                            Advertise With Us
+                            Partner With Us
                             </Link>
                           </li>
                         <li className="nav-item">
@@ -50,7 +50,7 @@ function Footer (){
                           <Route exact path="/blog" component={Blog} />
                           <Route exact path="/contact" component={Contact} />
                           <Route exact path="/privacypolicy" component={Contact} />
-                          <Route exact path="/advertising" component={Contact} />
+                          <Route exact path="/partner" component={Contact} />
                           <Route exact path="/tos" component={Contact} />
           
                         </Switch>

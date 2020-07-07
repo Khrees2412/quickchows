@@ -1,5 +1,7 @@
 import React, {Component,Fragment} from 'react'
-
+import Delivery from "./images-svg/delivery.svg"
+import Breakfast from "./images-svg/breakfast.png"
+import Location from "./images-svg/location.png"
 class DeliveryMain extends Component {
     constructor(props) {
         super(props);
@@ -14,7 +16,6 @@ class DeliveryMain extends Component {
                  <Fragment>
                    <div className="main-header">
                        <div>
-                       <img src="" alt="" />
                 <h1>Hungry Stomach ? </h1>
                     <p>Don't fret, we got you</p>
                     </div>
@@ -25,24 +26,26 @@ class DeliveryMain extends Component {
                      pay and get your food in 20 minutes or less.</p>
                 <p>QuickChows is designed to help you focus on what really matters in school,
                      eliminating the stress of cooking or walking to get food.</p>
-                     <button>Make an Order</button>
+                     <a href="#order-now">Make an Order</a>
                      </div>
             <div className="main-container">
                 <div className="thebest">
-                    <img src={"../images-svg/delivery.svg"} alt="good food  at hand" />
+                    <img src={Breakfast} width="300px" height="550px" alt="good food  at hand"  />
                     <p>Food from where you want, when you want, wherever you want!</p>
                 </div>
+                <br/>
                 <div className="quickdelivery">
-                    <img src="" alt="the best delivery in town" />
+                    <img src={Location} width="300px" height="550px" alt="the best delivery in town" />
                     <p>Our delivery staff consists of well trained individuals 
                     who serve customers in the best possible way</p>
                 </div>
+                <br/>
                 <div className="order">
-                    <img src="" alt="quick order quick delivery is our other name" />
+                <img src={Delivery} width="300px" height="550px" alt="quick order quick delivery is our other name" />
                     <p>Make an order you can trust, satisfying your hunger and thirst in an instant</p>
                 </div>
                 </div>
-                <div className="form-container">
+                <div className="form-container" id="order-now">
                 <form>
                     <label>Name: </label>
                     <input type="text" />
