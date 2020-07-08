@@ -1,1 +1,1 @@
-# App Built to serve food deliveries in LAUTECH
+# Client side / User facing side
