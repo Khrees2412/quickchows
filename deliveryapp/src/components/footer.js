@@ -1,11 +1,10 @@
 import React, {Fragment }from 'react';
-import {BrowserRouter as Router,Switch,Route,Link } from "react-router-dom";
+import {Link } from "react-router-dom";
 import Blog from "./blog"
 import Contact from "./contact"
 
 function Footer (){
-        return ( 
-            <Router> 
+        return (  
              <Fragment>
              <footer>
                  <nav>
@@ -43,22 +42,9 @@ function Footer (){
                         </div>    
                       </nav>
                       </footer>
-                      
-                      <div className="container mt-3">
-                        <Switch>
-                          <Route exact path="/company" component={Blog} />
-                          <Route exact path="/blog" component={Blog} />
-                          <Route exact path="/contact" component={Contact} />
-                          <Route exact path="/privacypolicy" component={Contact} />
-                          <Route exact path="/partner" component={Contact} />
-                          <Route exact path="/tos" component={Contact} />
-          
-                        </Switch>
-                      </div>
-
            </Fragment>
            
-           </Router>
+          
         )
 }
      

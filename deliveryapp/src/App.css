@@ -7,7 +7,16 @@ body{
   line-height:30px;
   font-family: 'Noto Sans JP', sans-serif;
 }
-
+#link{
+  background-color: rgb(3, 3, 53);
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+  margin: 10px;
+  border: rgb(3, 3, 53);
+}
 button{
   background-color: rgb(3, 3, 53);
   border-radius: 3px;
@@ -17,6 +26,10 @@ button{
   color: white;
   margin: 10px;
   border: rgb(3, 3, 53);
+}
+#form-box{
+  width: 500px;
+  margin: auto;
 }
 .onboard{
   color: rgb(3, 3, 53);

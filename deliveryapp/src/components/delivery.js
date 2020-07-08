@@ -1,4 +1,4 @@
-import React, {Component,Fragment} from 'react'
+import React, {Component,Fragment} from 'react';
 import Delivery from "./images-svg/delivery.svg"
 import Breakfast from "./images-svg/breakfast.png"
 import Location from "./images-svg/location.png"
@@ -26,7 +26,7 @@ class DeliveryMain extends Component {
                      pay and get your food in 20 minutes or less.</p>
                 <p>QuickChows is designed to help you focus on what really matters in school,
                      eliminating the stress of cooking or walking to get food.</p>
-                     <a href="#order-now">Make an Order</a>
+                     <a href="#order-now" id="link">Make an Order</a>
                      </div>
             <div className="main-container">
                 <div className="thebest">

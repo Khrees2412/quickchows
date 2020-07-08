@@ -3,7 +3,7 @@ import React, {Fragment} from "react"
 function Signup(){
     return(
         <Fragment>
-            <form>
+            <form id="form-box">
                     <label>Name: </label>
                     <input type="text" />
                     <br/>

@@ -3,7 +3,7 @@ import React, {Fragment} from "react"
 function Login(){
     return(
         <Fragment>
-            <form>
+            <form id="form-box">
                     <label>Email: </label>
                     <input type="email" />
                     <br/>

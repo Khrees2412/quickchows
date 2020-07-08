@@ -13,7 +13,7 @@ function Contact (){
                 <li>Instagram</li>
             </ul>
             <h4>You can also send us a mail</h4>
-            <div className="contact-form">
+            <div className="contact-form" id="form-box">
             <form>
                 <label for="name">Your Name:</label>
                 <input type="text"  placeholder="Full Name"/>
