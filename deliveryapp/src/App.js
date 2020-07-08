@@ -1,12 +1,16 @@
 import React,{Component,Fragment} from 'react';
 import './App.css';
-import DeliveryMain from "./components/delivery";
+import DeliveryMain from "./components/layouts/delivery";
 import {BrowserRouter as Router,Switch,Route,Link,NavLink } from "react-router-dom";
-import Blog from "./components/blog"
-import Contact from "./components/contact"
-import Footer from "./components/footer"
-import Login from "./components/login"
-import Signup from "./components/register"
+import Blog from "./components/layouts/blog"
+import Contact from "./components/layouts/contact"
+import Footer from "./components/layouts/footer"
+import Login from "./components/layouts/login"
+import Signup from "./components/layouts/register"
+import Terms from "./components/layouts/tos"
+import Company from "./components/layouts/company"
+import Partners from "./components/layouts/partner"
+import PrivacyPolicy from "./components/layouts/privacy"
 
 
 
@@ -17,9 +21,9 @@ class App extends Component{
     <Fragment>
           <div>
               <nav className="header-container">
-                <a href="/" className="navbar-brand">
+                <Link to="/" className="navbar-brand">
                 QuickChows
-                </a>
+                </Link>
                 <div className="nav-links">
                   <li className="nav-item">
                     <Link to={"/blog"} >
@@ -42,13 +46,14 @@ class App extends Component{
                 </nav>
               
                 <Switch>
-                  <Route exact path="/privacypolicy" component={Contact} />
-                  <Route exact path="/partner" component={Contact} />
-                  <Route exact path="/tos" component={Contact} />
-                  <Route path ="/blog" component={Blog} />
-                  <Route path ="/contact" component={Contact} />
-                  <Route path ="/login" component={Login} />
-                  <Route path ="/signup" component={Signup} />
+                  <Route path = "/privacypolicy" component={PrivacyPolicy} />
+                  <Route path = "/partner" component={Partners} />
+                  <Route path = "/company" component={Company} />
+                  <Route path = "/tos" component={Terms} />
+                  <Route path = "/blog" component={Blog} />
+                  <Route path = "/contact" component={Contact} />
+                  <Route path = "/login" component={Login} />
+                  <Route path = "/signup" component={Signup} />
                   <Route exact={true} path="/" component={DeliveryMain} />
   
                 </Switch>
@@ -63,3 +68,8 @@ class App extends Component{
 }
 
 export default App;
+/*
+<a href="https://www.vecteezy.com/free-vector/clock">
+Clock Vectors by Vecteezy</a>
+
+*/

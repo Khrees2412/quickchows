@@ -25,17 +25,17 @@ function Footer (){
                             </Link>
                           </li>
                         <li className="nav-item">
-                            <Link to={"/contact"} className="nav-link">
+                            <Link to={"/privacypolicy"} className="nav-link">
                             Privacy Policy
                             </Link>
                           </li>
                         <li className="nav-item">
-                            <Link to={"/contact"} className="nav-link">
+                            <Link to={"/partner"} className="nav-link">
                             Partner With Us
                             </Link>
                           </li>
                         <li className="nav-item">
-                            <Link to={"/contact"} className="nav-link">
+                            <Link to={"/tos"} className="nav-link">
                             Terms Of Use
                             </Link>
                           </li>

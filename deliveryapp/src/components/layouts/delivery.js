@@ -1,7 +1,7 @@
 import React, {Component,Fragment} from 'react';
-import Delivery from "./images-svg/delivery.svg"
-import Breakfast from "./images-svg/breakfast.png"
-import Location from "./images-svg/location.png"
+import Delivery from "../assets/delivery.svg"
+import Breakfast from "../assets/breakfast.png"
+import Location from "../assets/location.png"
 class DeliveryMain extends Component {
     constructor(props) {
         super(props);
