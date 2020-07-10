@@ -56,7 +56,7 @@ class DeliveryMain extends Component {
                 <div className="offer"></div>
                 <div className="offer"></div>
                 </div>
-                <div className="form-container" id="order-now">
+                <div className="form-container fc-img" id="order-now">
                 <form>
                     <label>Name: </label>
                     <input type="text" />
