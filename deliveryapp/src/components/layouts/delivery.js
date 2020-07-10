@@ -14,13 +14,18 @@ class DeliveryMain extends Component {
         return (
                  <Fragment>
                    <div className="whole-body">
-                   <div className="attention">       
+                   <div className="attention"> 
+
                     <div className="call special">  
                     <h1>Hungry Stomach ? </h1>
-                    <p>Don't fret, we got you</p>
+                    <p>Don't fret, we got you. Trust us to
+                        give you the best service.
+                    </p>
                     <a href="#order-now" id="link">Make an Order</a>
                     </div>
+                    
                     </div>
+
                     <div className="main-page">
                 <h2>Worry less about food.</h2>
                 <p>We offer the best food delivery service around campus.
@@ -32,24 +37,24 @@ class DeliveryMain extends Component {
                      </div>
             
             <div className="gallery">
-                <div className="talk-box">
+                <div className="usp">
                     <img src={Delivery} alt="The best staff"  />
                     <p>Food from where you want, when you want, wherever you want!</p>
                 </div>
                 <br/>
-                <div  className="talk-box">
+                <div  className="usp">
                     <img src={Location}  alt="Anywhere you are in town" />
                     <p>Our delivery staff consists of well trained individuals 
                     who serve customers in the best possible way</p>
                 </div>
                 <br/>
-                <div className="talk-box">
+                <div className="usp">
                 <img src={Breakfast}  alt="Trustworthy orders" />
                     <p>Make an order you can trust, satisfying your hunger and thirst in an instant</p>
                 </div>
-                <div className="usp"></div>
-                <div className="usp"></div>
-                <div className="usp"></div>
+                <div className="offer"></div>
+                <div className="offer"></div>
+                <div className="offer"></div>
                 </div>
                 <div className="form-container" id="order-now">
                 <form>
