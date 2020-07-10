@@ -3,7 +3,6 @@ import './App.css';
 import DeliveryMain from "./components/layouts/delivery";
 import {BrowserRouter as Router,Switch,Route,Link,NavLink } from "react-router-dom";
 import Blog from "./components/layouts/blog"
-import Contact from "./components/layouts/contact"
 import Footer from "./components/layouts/footer"
 import Login from "./components/layouts/login"
 import Signup from "./components/layouts/register"
@@ -31,8 +30,8 @@ class App extends Component{
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link to={"/contact"} className="nav-link">
-                    Contact Us
+                    <Link to={"/contactus"} >
+                    Partner With Us
                     </Link>
                   </li>
 
@@ -47,11 +46,10 @@ class App extends Component{
               
                 <Switch>
                   <Route path = "/privacypolicy" component={PrivacyPolicy} />
-                  <Route path = "/partner" component={Partners} />
+                  <Route path = "/contactus" component={Partners} />
                   <Route path = "/company" component={Company} />
                   <Route path = "/tos" component={Terms} />
                   <Route path = "/blog" component={Blog} />
-                  <Route path = "/contact" component={Contact} />
                   <Route path = "/login" component={Login} />
                   <Route path = "/signup" component={Signup} />
                   <Route exact={true} path="/" component={DeliveryMain} />

@@ -1,12 +1,11 @@
 import React, {Component,Fragment} from 'react';
-import Delivery from "../assets/delivery.svg"
-import Breakfast from "../assets/breakfast.png"
-import Location from "../assets/location.png"
+import "../styles/delivery.css"
+import Delivery from "../assets/two-plates.jpg"
+import Breakfast from "../assets/safe-delivery.jpg"
+import Location from "../assets/pizza.jpg"
+import RiceChicken from "../assets/rice-and-chicken.jpeg"
+
 class DeliveryMain extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {  }
-    }
     handleClick(e){
         e.preventDefault();
         alert("good choice!! ")
@@ -14,10 +13,13 @@ class DeliveryMain extends Component {
     render() { 
         return (
                  <Fragment>
-                   <div className="main-header">
-                       <div>
-                <h1>Hungry Stomach ? </h1>
+                   <div className="whole-body">
+                   <div className="attention">       
+                    <div className="call special">  
+                    <h1>Hungry Stomach ? </h1>
                     <p>Don't fret, we got you</p>
+                    <a href="#order-now" id="link">Make an Order</a>
+                    </div>
                     </div>
                     <div className="main-page">
                 <h2>Worry less about food.</h2>
@@ -26,24 +28,28 @@ class DeliveryMain extends Component {
                      pay and get your food in 20 minutes or less.</p>
                 <p>QuickChows is designed to help you focus on what really matters in school,
                      eliminating the stress of cooking or walking to get food.</p>
-                     <a href="#order-now" id="link">Make an Order</a>
+                     
                      </div>
-            <div className="main-container">
-                <div className="thebest">
-                    <img src={Breakfast} width="300px" height="550px" alt="good food  at hand"  />
+            
+            <div className="gallery">
+                <div className="talk-box">
+                    <img src={Delivery} alt="The best staff"  />
                     <p>Food from where you want, when you want, wherever you want!</p>
                 </div>
                 <br/>
-                <div className="quickdelivery">
-                    <img src={Location} width="300px" height="550px" alt="the best delivery in town" />
+                <div  className="talk-box">
+                    <img src={Location}  alt="Anywhere you are in town" />
                     <p>Our delivery staff consists of well trained individuals 
                     who serve customers in the best possible way</p>
                 </div>
                 <br/>
-                <div className="order">
-                <img src={Delivery} width="300px" height="550px" alt="quick order quick delivery is our other name" />
+                <div className="talk-box">
+                <img src={Breakfast}  alt="Trustworthy orders" />
                     <p>Make an order you can trust, satisfying your hunger and thirst in an instant</p>
                 </div>
+                <div className="usp"></div>
+                <div className="usp"></div>
+                <div className="usp"></div>
                 </div>
                 <div className="form-container" id="order-now">
                 <form>
@@ -76,6 +82,8 @@ class DeliveryMain extends Component {
                     <button onClick={this.handleClick} color="primary">Submit</button>
                 </form>
                 </div>
+                <div className="items">
+                </div>
                 </div>
                 </Fragment>
                 
@@ -86,6 +94,7 @@ class DeliveryMain extends Component {
  
 export default DeliveryMain;
 /*
+<img src={RiceChicken} />
                     <label>Preferred Purchase Venue: </label>
                     <select>
                         <option> Alata   </option>

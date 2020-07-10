@@ -1,0 +1,14 @@
+.footer-link a{
+    text-decoration: none;
+    border: 1px solid yellow;
+    padding: 10px;
+    border-radius: 7px;
+    color: white;
+    margin-left:5px;
+}
+
+footer{
+    background-color: rgb(3, 3, 53);
+    color: white;
+    padding: 25px;
+  }
