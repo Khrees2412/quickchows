@@ -1,9 +1,14 @@
 import React, {Fragment} from "react"
+import "../styles/login.css";
+import {Link} from "react-router-dom"
+import Footer from "./footer"
 
 function Login(){
     return(
         <Fragment>
-            <form id="form-box">
+            <div className="onboard-form">
+                <h1>Back to <Link to="/" className="goto">Home</Link></h1>
+            <form  className="login-box">
                     <label>Email: </label>
                     <input type="email" />
                     <br/>
@@ -12,8 +17,13 @@ function Login(){
                     <input type="password" />
                     <br/>
                     
-                    <button type="submit">Log In</button> 
+                     
+                    <p><button className="btn" type="submit">Log In</button>
+                    New to QuickChows? <Link to="/signup"className="goto"> Sign Up</Link></p>
             </form>
+            
+            </div>
+            <Footer/>
         </Fragment>
 
     )

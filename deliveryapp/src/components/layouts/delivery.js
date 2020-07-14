@@ -1,5 +1,7 @@
 import React, {Component,Fragment} from 'react';
-import "../styles/delivery.css"
+import "../styles/delivery.css";
+import Navbar from "./navbar";
+import Footer from"./footer";
 import Delivery from "../assets/two-plates.jpg"
 import Breakfast from "../assets/safe-delivery.jpg"
 import Location from "../assets/pizza.jpg"
@@ -13,6 +15,7 @@ class DeliveryMain extends Component {
     render() { 
         return (
                  <Fragment>
+                     <Navbar/>
                    <div className="whole-body">
                    <div className="attention"> 
 
@@ -21,7 +24,7 @@ class DeliveryMain extends Component {
                     <p>Don't fret, we got you. Trust us to
                         give you the best service.
                     </p>
-                    <a href="#order-now" id="link">Make an Order</a>
+                    <a href="#order-now" id="link">Sign Up !</a>
                     </div>
                     
                     </div>
@@ -84,12 +87,13 @@ class DeliveryMain extends Component {
                     </select>
                     <br/>
 
-                    <button onClick={this.handleClick} color="primary">Submit</button>
+                    <button  className="btn" onClick={this.handleClick} color="primary">Submit</button>
                 </form>
                 </div>
                 <div className="items">
                 </div>
                 </div>
+                <Footer/>
                 </Fragment>
                 
             

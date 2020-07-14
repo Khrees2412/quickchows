@@ -1,7 +1,7 @@
 import React, {Component, Fragment }  from "react"
-import FoodItem from "./components/foodGallery"
+import foodItem from "./components/productsList"
 
-class FoodList extends Component{
+class Gallery extends Component{
     constructor(props){
         super(props)
         this.state={
@@ -9,11 +9,11 @@ class FoodList extends Component{
         }
     }
     render(){
-    const foods =  FoodItem.map(food => <li>{food.name}</li>)
+    
         return(
             <Fragment>
                 <ul>
-                    {foods}
+
                 </ul>
 
             </Fragment>
@@ -21,4 +21,4 @@ class FoodList extends Component{
     }
 }
 
-export default FoodList;
+export default Gallery;

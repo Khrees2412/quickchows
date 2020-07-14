@@ -1,9 +1,14 @@
-import React, {Fragment} from "react"
+import React, {Fragment} from "react";
+import {Link} from "react-router-dom"
+import "../styles/register.css";
+import Footer from "./footer"
 
 function Signup(){
     return(
         <Fragment>
-            <form id="form-box">
+            <div className="onboard-form">
+            <h1>Back to <Link to="/" className="goto">Home</Link></h1>
+            <form className="sign-box" >
                     <label>Name: </label>
                     <input type="text" />
                     <br/>
@@ -20,8 +25,11 @@ function Signup(){
                     <input type="password" />
                     <br/>
 
-                    <button type="submit">Sign Up</button> 
+                   <p><button className="btn" type="submit">Sign Up</button> Already have an account?
+                   <Link to="/login" className="goto"> Login</Link> </p> 
             </form>
+            <Footer/>
+            </div>
         </Fragment>
 
     )

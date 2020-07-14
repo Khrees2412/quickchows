@@ -10,6 +10,7 @@ import Terms from "./components/layouts/tos"
 import Company from "./components/layouts/company"
 import Partners from "./components/layouts/partner"
 import PrivacyPolicy from "./components/layouts/privacy"
+import Navbar from "./components/layouts/navbar"
 
 
 
@@ -18,35 +19,10 @@ class App extends Component{
   return (
     <Router>
     <Fragment>
-          <div>
-              <nav className="header-container">
-                <Link to="/" className="navbar-brand">
-                QuickChows
-                </Link>
-                <div className="nav-links">
-                  <li className="nav-item">
-                    <Link to={"/blog"} >
-                    Blog
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link to={"/contactus"} >
-                    Partner With Us
-                    </Link>
-                  </li>
-
-                    <Link to={"/login"} className="onboard">
-                    Log In
-                    </Link>
-                    <Link to={"/signup"} className="onboard">
-                    Sign Up
-                    </Link>
-                </div>
-                </nav>
-              
+                        
                 <Switch>
                   <Route path = "/privacypolicy" component={PrivacyPolicy} />
-                  <Route path = "/contactus" component={Partners} />
+                  <Route path = "/contact-us" component={Partners} />
                   <Route path = "/company" component={Company} />
                   <Route path = "/tos" component={Terms} />
                   <Route path = "/blog" component={Blog} />
@@ -56,9 +32,7 @@ class App extends Component{
   
                 </Switch>
               
-            </div>
 
-    <Footer/>
    </Fragment>
      </Router>
   );

@@ -2,9 +2,9 @@
   box-sizing: border-box;
 }
 body{
-  margin:0px;
+  margin: 0;
   padding: 0;
-  background-color:yellow;
+  
   line-height:30px;
   font-family: 'Noto Sans JP', sans-serif;
 }
@@ -18,66 +18,14 @@ button{
   margin: 10px;
   border: rgb(3, 3, 53);
 }
-.onboard{
-  color: rgb(3, 3, 53);
-  border-radius: 5px;
-  padding: 10px;
-  outline: none;
-  background-color:#fff;
-  margin: 10px;
-  border: rgb(3, 3, 53);
-  text-decoration: none;
-}
-.onboard:hover{
-  opacity: 0.5;
-}
-.header-container{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 7px 0px;
-    background: rgb(13, 13, 53);
-   
-}
-
-.nav-links li{
-  display: inline-block;
-  padding: 0px 10px;
-  margin: 10px;
-}
-.nav-links{
-    list-style-type: none;
-    
-}
-
-.navbar-brand, .nav-item a{
-    text-decoration: none;
-    border-radius: 7px;
-    padding: 5px;
-    font-weight: 500;
-}
-.navbar-brand:visited, .nav-item a:visited{
-    color: blue;
-}
-.navbar-brand{
-  margin:10px;
-}
-.main-link{
-    text-decoration: none;
-    background: white;
-    border-radius: 5px;
-    padding: 5px;
-    
-    font-weight: 700;
-
-}
 label{
   display: inline-block;
+  color: white;
 }
-input,select{
-  border: 1px solid navy;
+input,select,textarea{
+  border: 3px solid navy;
+  outline-color:yellow;
   border-radius: 5px;
-  outline-color: yellow;
   cursor: pointer;
   width: 100%;
   margin: 10px;
@@ -85,20 +33,7 @@ input,select{
   font-size: 16px;
   font-weight: 500;
 }
-/*
-input,select{
-    padding: 13px;
-    margin: 15px 0;
-    border: 1px solid black;
-    border-radius: 3px;
-    background-color: white;
-    color: black;
-    outline-color: blue;
-    width: 100%;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: bold;
-}*/
+
 
 @media (max-width:960px){
   
@@ -117,7 +52,7 @@ input,select{
 border: 2px solid white;
 }
 
-input,select{
+input,select,textarea{
   border-radius: 3px;
   outline-color: navy;
   cursor: pointer;
@@ -127,35 +62,3 @@ input,select{
   font-weight: 500;
 }
 }
-@media only screen and (max-width:500px){
-  .header-container{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-  }
-}
-/* 
-border: 1px solid rgb(3, 3, 53);
-  box-shadow: 1px 1px 3px #fff;
-  */
-  
-/*
-.nav-link {
-    text-decoration: none;
-    border: 1px solid white;
-    padding: 10px;
-    border-radius: 7px;
-    color: white;
-    margin-left:5px;
-}
-.main-header{
-  display: flex;
-  justify-content: center;
-}
-
-.container{
-    background-color:yellow;
-    color: black;
-}
- background: white;
-*/

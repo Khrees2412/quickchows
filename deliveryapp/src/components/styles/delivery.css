@@ -1,10 +1,14 @@
+.whole-body{
+  background-color:yellow;
+}
 #link{
-  background-color: rgb(9, 9, 194);
+  background-color: yellow;
   border-radius: 5px;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 10px;
-  color: white;
+  padding: 7px 15px ;
+  color: black;
+  font-weight: 700;
  
 
 }
@@ -27,22 +31,22 @@
     margin: 25px 0;
   }
   .attention{
-    width: 98.7vw;
-    height: 80vh;
+    width: 100vw;
+    height: 85vh;
     margin: auto;
     overflow: hidden;
-    background-image: linear-gradient(rgba(5,5,5,0.8),
+    background-image: linear-gradient(rgba(15,15,15,0.7),
     rgba(0,0,0,0.8)),
     url("../assets/rice-and-chicken.jpeg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
   }
   .fc-img{
-    width: 98.7vw;
+    width: 100vw;
     height: 80vh;
     margin: auto;
     overflow: hidden;
-    background-image: linear-gradient(rgba(5,5,5,0.8),
+    background-image: linear-gradient(rgba(15,15,15,0.7),
     rgba(0,0,0,0.8)),
     url("../assets/ice-cream.jpg");
     background-size: 100% 100%;
@@ -54,25 +58,12 @@
     flex-direction: column;
     margin-top: 5rem;
     color: white;
-  }
-  /*
-  .attention:before{
-    width:100%;
-    height:400px;
-    margin-bottom: 20px;
-    background-image:url("../assets/rice-and-chicken.jpeg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    z-index: -1;
-  }
-  */  
-    
+  }   
   
   .usp{
       display: grid;
       grid-template-rows: 1fr no-repeat;
       width: 320px;
-      
       padding: 10px;
       margin: 0px 10px;
      
@@ -94,7 +85,13 @@
    
   }
 
- 
+ @media  screen and (max-width:960px){
+  .gallery{
+    flex-direction: column;
+    width:70%;
+    margin: auto;
+  }
+ }
 @media only screen and (max-width:500px){
   
   .main-header{
