@@ -1,16 +1,20 @@
 import React,{Component,Fragment} from 'react';
 import './App.css';
 import DeliveryMain from "./components/layouts/delivery";
-import {BrowserRouter as Router,Switch,Route,Link,NavLink } from "react-router-dom";
+import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
 import Blog from "./components/layouts/blog"
 import Footer from "./components/layouts/footer"
-import Login from "./components/layouts/login"
-import Signup from "./components/layouts/register"
+import {Login} from "./components/layouts/onboarding"
+import Signup from "./components/layouts/onboarding"
 import Terms from "./components/layouts/tos"
 import Company from "./components/layouts/company"
 import Partners from "./components/layouts/partner"
 import PrivacyPolicy from "./components/layouts/privacy"
 import Navbar from "./components/layouts/navbar"
+import Breakfast from "./components/layouts/offers"
+import {Lunch} from "./components/layouts/offers"
+import {Dinner} from "./components/layouts/offers"
+
 
 
 
@@ -21,6 +25,9 @@ class App extends Component{
     <Fragment>
                         
                 <Switch>
+                  <Route path="/dinner-menu" component={Dinner} />
+                  <Route path="/lunch-menu" component={Lunch} />
+                  <Route path="/breakfast-menu" component={Breakfast} />
                   <Route path = "/privacypolicy" component={PrivacyPolicy} />
                   <Route path = "/contact-us" component={Partners} />
                   <Route path = "/company" component={Company} />

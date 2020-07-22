@@ -7,7 +7,7 @@ function Footer (){
         return (  
              <Fragment>
              <footer>
-                        <di className="nav-links">
+                        <div className="nav-links">
                         <li className="footer-link">
                             <Link to={"/blog"} className="nav-link">
                             Blog
@@ -34,7 +34,7 @@ function Footer (){
                             </Link>
                           </li>
                        
-                        </di>
+                        </div>
                         <div className="social-logo">
                           <Link to={"/contactus"}><i class="fa fa-facebook-square" aria-hidden="true"></i></Link>
                           <Link to={"/contactus"}><i class="fa fa-twitter-square" aria-hidden="true"></i></Link>

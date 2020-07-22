@@ -1,12 +1,12 @@
 .footer-link a{
     text-decoration: none;
     padding: 10px;
-    color: white;
+    color: rgb(13,13,53);
     margin-left:5px;
 }
 
 footer{
-    background-color: rgb(3, 3, 53);
+    background-color: yellow;
     color: white;
-    padding: 25px;
+    padding: 30px;
   }
