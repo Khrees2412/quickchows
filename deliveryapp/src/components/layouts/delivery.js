@@ -1,41 +1,41 @@
 import React, {Component,Fragment} from 'react';
 import "../styles/delivery.css";
 import {Link} from "react-router-dom"
-import Navbar from "./navbar";
+import Navbars from "./navbar";
 import Footer from"./footer";
 import Delivery from "../assets/two-plates.jpg"
-import Breakfast from "../assets/safe-delivery.jpg"
+import Order from "../assets/safe-delivery.jpg"
 import Location from "../assets/pizza.jpg"
-import Button from "@material-ui/core/Button"
-//import RiceChicken from "../assets/rice-and-chicken.jpeg"
+import Breakfast,{Lunch,Dinner} from "./offers"
+
 
 class DeliveryMain extends Component {
    
     render() { 
         return (
                  <Fragment>
-                     <Navbar/>
+                     <Navbars/>
                    <div className="whole-body">
                    <div className="attention"> 
 
                     <div className="call special">  
                     <h1>Hungry Stomach ? </h1>
-                    <p>Don't fret, we got you. Trust us to
+                    <p>Don't fret, we got you. <br/>Trust us to
                         give you the best food service.
                     </p>
-                    <h2>Food at the speed of light <i class="fas fa-thunderstorm    "></i></h2>
-                    <a href="#order-now" onClick={()=>alert("nice")}id="link">View Our Offers </a>
+                    <h4>Food at the speed of light <i class="fas fa-thunderstorm    "></i></h4>
+                    <a href="#order-now" id="link">View Our Offers </a>
                     </div>
                     
                     </div>
 
                     <div className="main-page">
-                <h1>Worry less about food.</h1>
-                <p>At QuickChows we know that your time is very precious,
-                    which is why we came up with a plan that works best for you.</p>
-                     <p>All you have to do is select a plan that best suits your current needs and we take care of the 
-                     rest.</p>
-                <p>QuickChows is designed to help you focus on what really matters in school,
+                <h3>Worry less about food.</h3>
+                <p>At QuickChows we know your time is precious,
+                    which is why we came up with a plan that caters to your needs.
+                     All you have to do is select a plan that best suits your needs and we take care of the 
+                     rest.
+                QuickChows is designed to help you focus on what really matters in school,
                      eliminating the stress of cooking or walking to get food.</p>
                     
                      </div>
@@ -53,7 +53,7 @@ class DeliveryMain extends Component {
                 </div>
                 <br/>
                 <div className="usp card">
-                     <img src={Breakfast}  alt="Trustworthy orders" />
+                     <img src={Order}  alt="Trustworthy orders" />
                     <p>Make an order you can trust, satisfying your hunger and thirst in an instant</p>
                    
                 </div>
@@ -61,24 +61,20 @@ class DeliveryMain extends Component {
                
                 <div className="offers fc-img" id="order-now">
                 <h2>Carefully curated meals for healthy living</h2>
-                <Link to="/breakfast-menu">
-                    <div className="offer breakfast">
-                    <h3><i class="fas fa-cloud"></i>Breakfast Specials</h3>
-                    </div>
-                </Link>
-                <Link to="/lunch-menu">
-                    <div className="offer lunch">
-                    <h3><i class="fas fa-sun "></i>Lunch Specials</h3>
-                    </div>
-                </Link>
-                <Link to="/dinner-menu">
+                <div className="offer breakfast">
+                    <Breakfast/>               
+                </div>
+                <div className="offer lunch">
+                    <Lunch/>
+                </div>
                     <div className="offer dinner">
-                    <h3><i class="fas fa-moon "></i>Dinner Specials</h3>
+                        <Dinner/>                 
                     </div>
-                </Link>
+               
                 </div>
                 
                 </div>
+
                 <Footer/>
                 </Fragment>
                 
@@ -89,6 +85,10 @@ class DeliveryMain extends Component {
  
 export default DeliveryMain;
 /*
+ <Link to="/breakfast-menu"> 
+                <Link to="/lunch-menu">
+                <Link to="/dinner-menu">
+
 <img src={RiceChicken} />
                     <label>Preferred Purchase Venue: </label>
                     <select>

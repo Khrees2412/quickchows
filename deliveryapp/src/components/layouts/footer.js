@@ -7,7 +7,7 @@ function Footer (){
         return (  
              <Fragment>
              <footer>
-                        <div className="nav-links">
+                        <div className="navlinks">
                         <li className="footer-link">
                             <Link to={"/blog"} className="nav-link">
                             Blog

@@ -12,46 +12,40 @@
   color: black;
   font-weight: 700;
 }
+.call{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
+  color: white;
+}   
+.call p{
+  text-align: center;
+}
+.call h4{
+  color:gray;
+}
+.main-page{
+  text-align: center;
+  padding: 40px;
+  line-height: 25px;
+}
 .gallery{
     display: flex;
     flex-direction: column;
-    background-color: rgb(235,235,235);
+    background-color: white;
   }
   .usp{
     border: 2px solid rgb(248,248,248);    
-    padding: 0px;
+    
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 1000px;
+  max-width: 100%;
   margin: auto;
   text-align: center;
   font-family: arial;
 }
-
-.price {
-  color: grey;
-  font-size: 22px;
-}
-
-.card button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-.img{
-width: 100%;
-}
-.card button:hover {
-  opacity: 0.7;
-}
-
 .usp img{
   width:100%;
   height:300px;
@@ -59,22 +53,13 @@ width: 100%;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-  .main-header{
-    width: 50%;
-    margin: auto;
-  }
-  .main-page{
-    text-align: center;
-    padding: 40px;
-    line-height: 15px;
-  }
   .form-container{
     display: flex;
     justify-content: center;
     margin: 25px 0;
   }
   .attention{
-    width: 98.8vw;
+    width: 100vw;
     height: 85vh;
     margin: auto;
     overflow: hidden;
@@ -84,55 +69,7 @@ width: 100%;
     background-size: 100% 100%;
     background-repeat: no-repeat;
   }
-  /*
-  .fc-img{
-    width: 100vw;
-    height: 100%;
-    margin: 10px 0px auto;
-    overflow: hidden;
-    background-image: linear-gradient(rgba(15,15,15,0.7),
-    rgba(0,0,0,0.8)),
-    url("../assets/ice-cream.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-  }
-  */
-  .offer{
-    background: black;
-    width: 25%;
-    margin:10px  auto;
-    padding: 5px;
-    color: black;
-    border-radius: 5px;
-    
-  }
-  .breakfast{
-      background-color: rgb(116, 126, 125);
-  }
-  .fa-cloud{
-      color:white;
-  }
-  .lunch{
-    background-color: white;
-  }
-  .fa-sun{
-    color: yellow;
-  }
-  .dinner{
-    background-color: darkblue;
-  }
-  .fa-moon{
-    color:white;
-  }
-  .offers a{
-    text-decoration: none;
-
-  }
-  .offer h3{
-    text-align: center;
-    font-weight: 600;
-
-  }
+ 
   .offers, .offers h1{
     text-align: center;
     display: flex;
@@ -141,21 +78,7 @@ width: 100%;
     justify-content: center;
     flex-direction: column;
   }
-  .fas{
-      font-size: 25px;
-      margin-right:10px ;
-  }
-  .call{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 5rem;
-    color: white;
-  }   
-  
-  
-  /* box-shadow:10px 10px rgba(228, 224, 7, 0.25);
-   linear-gradient(rgba(0,0,0,0.8),*/
+
   .form-container{
     padding: 20px;
     margin: 10px 0px 0px;
@@ -166,20 +89,13 @@ width: 100%;
   margin:5px;
 }
 
- @media  screen and (max-width:960px){
+@media only screen and (max-width:768px){
   .gallery{
-    width:70%;
+    width:90%;
     margin: auto;
   }
- }
-@media only screen and (max-width:500px){
-  
   .main-header{
     width: 100%;
-    margin: auto;
-  }
-  .whole-body{
-    max-width: 500px;
     margin: auto;
   }
   .gallery{
@@ -191,7 +107,7 @@ width: 100%;
     width: 100%;
   }
   .usp img{
-    width: 320px;
+    width: 100%;
     margin: auto;
   }
   .form-container{
@@ -208,3 +124,16 @@ width: 100%;
     bottom: 6rem;
     left: 0;
     */
+     /*
+  .fc-img{
+    width: 100vw;
+    height: 100%;
+    margin: 10px 0px auto;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(15,15,15,0.7),
+    rgba(0,0,0,0.8)),
+    url("../assets/ice-cream.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  */

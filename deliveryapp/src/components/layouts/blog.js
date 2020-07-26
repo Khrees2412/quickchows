@@ -1,8 +1,14 @@
-import React from 'react'
+import React,{useState} from 'react';
+import Navbar from "./navbar"
+import {Link} from "react-router-dom"
+import "../styles/blog.css"
 
-function Blog (){
+function Blog(){
+    //const [show, setShow] = useState(false)
     return(
-        <div>Coming soon</div>
+        <>
+       <Navbar/>
+        </>
     )
 }
 export default Blog;

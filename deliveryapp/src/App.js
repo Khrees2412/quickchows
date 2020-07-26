@@ -3,17 +3,17 @@ import './App.css';
 import DeliveryMain from "./components/layouts/delivery";
 import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
 import Blog from "./components/layouts/blog"
-import Footer from "./components/layouts/footer"
 import {Login} from "./components/layouts/onboarding"
 import Signup from "./components/layouts/onboarding"
 import Terms from "./components/layouts/tos"
 import Company from "./components/layouts/company"
 import Partners from "./components/layouts/partner"
 import PrivacyPolicy from "./components/layouts/privacy"
-import Navbar from "./components/layouts/navbar"
 import Breakfast from "./components/layouts/offers"
 import {Lunch} from "./components/layouts/offers"
 import {Dinner} from "./components/layouts/offers"
+//import Footer from "./components/layouts/footer" //import Navbars from "./components/layouts/navbar"
+
 
 
 

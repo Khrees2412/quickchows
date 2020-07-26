@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "QuickChows",
+  "name": "QuickChows Food delivery App",
   "icons": [
     {
       "src": "favicon.ico",

@@ -3,7 +3,7 @@ import React from "react";
 function Breakfast(){
     return(
         <div>
-            <h1>Breakfast</h1>
+            <p>Breakfast</p>
 
         </div>
     )
@@ -13,7 +13,7 @@ export default Breakfast;
 export function Lunch(){
     return(
         <div>
-            <h1>Lunch</h1>
+            <p>Lunch</p>
         </div>
     )
 }
@@ -22,7 +22,7 @@ export function Lunch(){
 export function Dinner(){
     return(
         <div>
-            <h1>Dinner</h1>
+            <p>Dinner</p>
 
         </div>
     )
