@@ -1,20 +1,22 @@
 import React, { Fragment } from 'react';
+import Navbar from "./navbar"
 import  "../styles/partner.css"
 
 function Partners (){
     return(
         <Fragment>
-          
-            <h4>You can also send us a mail</h4>
+          <Navbar/>
+            
             <div className="contact-form" id="form-box">
             <form action="/contact" method="POST">
+            <h4 className="h4"> Send us a mail</h4>
                 <label for="name">Your Name:</label>
-                <input type="text"  placeholder="Full Name"/>
+                <input className="input" type="text"  placeholder="Full Name"/>
                 <label for="email">Your Email:</label>
-                <input type="email" placeholder="Email Address"/>
+                <input className="input" type="email" placeholder="Email Address"/>
                 <label for="message">Your Message:</label>
-                <textarea   placeholder="It should be brief and straight to the point"/>
-                <button type="submit">Send</button>
+                <textarea className="input"  placeholder="It should be brief and straight to the point" />
+                <button className="btn-form" type="submit">Send</button>
             </form>
             </div>
         </Fragment>

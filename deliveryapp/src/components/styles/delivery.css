@@ -12,6 +12,9 @@
   color: black;
   font-weight: 700;
 }
+#link:hover{
+  opacity:0.75;
+}
 .call{
   display: flex;
   align-items: center;
@@ -59,7 +62,7 @@
     margin: 25px 0;
   }
   .attention{
-    width: 100vw;
+    width: 100%;
     height: 85vh;
     margin: auto;
     overflow: hidden;

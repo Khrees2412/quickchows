@@ -20,6 +20,9 @@ function Navbar(){
             <Link to={"/"}>Home</Link>
             <Link to={"/blog"}>Blog</Link>
             <Link to={"/contact-us"}>Partner With Us</Link>
+            <Link className="onboard-log" to={"/login"}>Login</Link>
+            <Link className="onboard-sign" to={"/signup"}>Sign Up</Link>
+            
             </nav>
         </header>
 
