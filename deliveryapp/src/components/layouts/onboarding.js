@@ -1,9 +1,13 @@
-import React, {Fragment} from "react";
+import React, {Fragment,useEffect} from "react";
 import {Link} from "react-router-dom"
 import "../styles/onboarding.css";
 import Footer from "./footer"
 
-function Signup(){
+export function Signup(){
+    useEffect(() => {
+        // Update the document title using the browser API
+        document.title = "Sign In";
+      });
    const handleClick = (e) => {
         e.preventDefault();
         alert("good choice!! ")
@@ -55,7 +59,7 @@ function Signup(){
 
     )
 }
-export default Signup;
+
 
 
 export function Login(){

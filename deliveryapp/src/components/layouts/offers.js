@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 
 function Breakfast(){
-    const [breakfast, setBreakfast] = useState(["something"])
+    const [breakfast, setBreakfast] = useState("something")
     return(
         <div>
             <h4>Breakfast</h4>
@@ -12,7 +12,7 @@ function Breakfast(){
 export default Breakfast;
 
 export function Lunch(){
-    const [lunch, setLunch] = useState(["something"])
+    const [lunch, setLunch] = useState("something")
     return(
         <div>
             <h4>Lunch</h4>
@@ -23,7 +23,7 @@ export function Lunch(){
  
 
 export function Dinner(){
-    const [dinner, setDinner] = useState(["something"]);
+    const [dinner, setDinner] = useState("something");
     return(
         <div>
             <h4>Dinner</h4>

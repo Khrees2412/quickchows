@@ -4,7 +4,7 @@ import DeliveryMain from "./components/layouts/delivery";
 import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
 import Blog from "./components/layouts/blog"
 import {Login} from "./components/layouts/onboarding"
-import Signup from "./components/layouts/onboarding"
+import {Signup} from "./components/layouts/onboarding"
 import Terms from "./components/layouts/tos"
 import Company from "./components/layouts/company"
 import Partners from "./components/layouts/partner"

@@ -11,21 +11,15 @@ const userSchema = new Schema({
     email:{ 
         type:String,
         required: true
+    
     },
-    location:{ 
+    password:{
         type:String,
-        required: true
+        required:true
     },
-    orders: {
-        desc:{ 
-            type:String,
-            required: true
-        },
-        createdAt: new Date, //Date.now,
-        status:  true //gonna create a function to edit this later
-    }
+    createdAt : Date.now
 })
-module.exports = User = mongoose.model("userSchema", userSchema);
+module.exports = User = mongoose.model("user", userSchema);
 /*
 name: String,
     phoneNumber: Number,
