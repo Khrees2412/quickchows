@@ -1,5 +1,4 @@
 {
-  "tabWidth": 2,
-  "useTabs": false,
-  "formatOnSave":true
+  "tabWidth": 4,
+  "useTabs": true
 }

@@ -1,60 +1,71 @@
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
-a{
-  text-decoration: none;
-  color: inherit;
+a {
+	text-decoration: none;
+	color: inherit;
 }
-a:hover{
-  opacity: 0.75;
-  text-decoration: none;
+a:hover {
+	opacity: 0.75;
+	text-decoration: none;
+}
+p {
+	margin: 5px !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 10px auto !important;
 }
 
-body{
-  line-height:30px;
-  font-family:  Helvetica, sans-serif;
+body {
+	line-height: 30px;
+	font-family: Helvetica, sans-serif;
 }
 /*font-family: 'Noto Sans JP', sans-serif;*/
-button{
-  background-color: rgb(5, 5, 150);
-  border-radius: 3px;
-  text-transform: uppercase;
-  padding: 12px;
-  outline: none;
-  color: white;
-  margin: 10px;
-  border: rgb(3, 3, 53);
+button {
+	background-color: rgb(5, 5, 150);
+	border-radius: 3px;
+	text-transform: uppercase;
+	padding: 12px;
+	outline: none;
+	color: white;
+	margin: 10px;
+	border: rgb(3, 3, 53);
 }
-button:hover{
-  opacity: 0.75;
-}
-label{
-  display: inline-block;
-  color: white;
-}
-input,select,textarea{
-  border:none;
-  outline: none;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 100%;
-  margin: 10px;
-  padding: 15px;
-  font-size: 16px;
-  font-weight: 500;
+button:hover {
+	opacity: 0.75;
 }
 
-
-@media (max-width:768px){
-input,select,textarea{
-  border-radius: 3px;
-  outline-color: navy;
-  cursor: pointer;
-  margin: 10px;
-  padding: 7px;
-  font-size: 15px;
-  font-weight: 500;
+input,
+select,
+textarea {
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 100%;
+	margin: 10px;
+	padding: 3rem;
+	font-size: 16px;
+	font-weight: 500;
 }
+
+@media (max-width: 768px) {
+	input,
+	select,
+	textarea {
+		border-radius: 3px;
+		outline-color: navy;
+		cursor: pointer;
+		margin: 10px;
+		padding: 7px;
+		font-size: 15px;
+		font-weight: 500;
+	}
 }

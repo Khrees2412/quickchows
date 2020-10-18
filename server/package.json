@@ -1,11 +1,10 @@
 {
-  "name": "deliveryman",
+  "name": "quickchowsServer",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js"
-    
   },
   "keywords": [
     "delivery",
@@ -14,9 +13,11 @@
   "author": "Christian Ndu",
   "license": "ISC",
   "dependencies": {
-    "concurrently": "^5.2.0",
     "express": "^4.17.1",
-    "mongoose": "^5.9.18",
-    "nodemon": "^2.0.4"
+    "mongoose": "^5.9.18"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "concurrently": "^5.2.0"
   }
 }

@@ -1,124 +1,121 @@
-.whole-body{
-  background: white;
-  font-family:  "Noto GP", sans-serif;
-  color: #000;
+.whole-body {
+	background: white;
+	font-family: "Noto GP", sans-serif;
+	color: #000;
 }
-#link{
-  background-color: yellow;
-  border-radius: 5px;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 7px 15px ;
-  color: black;
-  font-weight: 700;
+#link {
+	background-color: yellow;
+	border-radius: 5px;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 7px 15px;
+	color: black;
+	font-weight: 700;
 }
-#link:hover{
-  opacity:0.75;
+#link:hover {
+	opacity: 0.75;
 }
-.call{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 5rem;
-  color: white;
-}   
-.call p{
-  text-align: center;
+.call {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 5rem;
+	color: white;
 }
-.call h4{
-  color:gray;
+.call p {
+	text-align: center;
 }
-.main-page{
-  text-align: center;
-  padding: 40px;
-  line-height: 25px;
+.call h4 {
+	color: gray;
 }
-.gallery{
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-  }
-  .usp{
-    border: 2px solid rgb(248,248,248);    
-    
+.main-page {
+	text-align: left;
+	padding: 40px;
+	line-height: 25px;
+}
+.gallery {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+}
+.usp {
+	border: 2px solid rgb(248, 248, 248);
 }
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 100%;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 600px;
+	margin: 1rem auto;
+	text-align: center;
+	font-family: arial;
 }
-.usp img{
-  width:100%;
-  height:300px;
-  margin-top: 0px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+.usp img {
+	width: 600px;
+	height: 300px;
+	margin-top: 0px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 }
-  .form-container{
-    display: flex;
-    justify-content: center;
-    margin: 25px 0;
-  }
-  .attention{
-    width: 100%;
-    height: 85vh;
-    margin: auto;
-    overflow: hidden;
-    background-image: linear-gradient(rgba(15,15,15,0.7),
-    rgba(0,0,0,0.8)),
-    url("../assets/rice-and-chicken.jpeg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-  }
- 
-  .offers, .offers h1{
-    text-align: center;
-    display: flex;
-    width: 100%;
-    margin: auto;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .form-container{
-    padding: 20px;
-    margin: 10px 0px 0px;
-   
-  }
-
-.input-tag{
-  margin:5px;
+.form-container {
+	display: flex;
+	justify-content: center;
+	margin: 25px 0;
+}
+.attention {
+	width: 100%;
+	height: 85vh;
+	margin: auto;
+	overflow: hidden;
+	background-image: linear-gradient(rgba(15, 15, 15, 0.7), rgba(0, 0, 0, 0.8)),
+		url("../assets/rice-and-chicken.jpeg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
 }
 
-@media only screen and (max-width:768px){
-  .gallery{
-    width:90%;
-    margin: auto;
-  }
-  .main-header{
-    width: 100%;
-    margin: auto;
-  }
-  .gallery{
-    display:flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .usp{
-    width: 100%;
-  }
-  .usp img{
-    width: 100%;
-    margin: auto;
-  }
-  .form-container{
-    display: flex;
-    justify-content: center;
-    width:100%;
-    
-  }
+.offers,
+.offers h1 {
+	text-align: center;
+	display: flex;
+	width: 100%;
+	margin: auto;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.form-container {
+	padding: 20px;
+	margin: 10px 0px 0px;
+}
+
+.input-tag {
+	margin: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+	.gallery {
+		width: 90%;
+		margin: auto;
+	}
+	.main-header {
+		width: 100%;
+		margin: auto;
+	}
+	.gallery {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+	.usp {
+		width: 100%;
+	}
+	.usp img {
+		width: 100%;
+		margin: auto;
+	}
+	.form-container {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
 }
 /*
  position: relative;
@@ -127,7 +124,7 @@
     bottom: 6rem;
     left: 0;
     */
-     /*
+/*
   .fc-img{
     width: 100vw;
     height: 100%;
