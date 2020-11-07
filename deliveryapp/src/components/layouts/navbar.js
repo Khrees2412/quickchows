@@ -7,7 +7,7 @@ function Navbar() {
     <Fragment>
       <header className="main-nav">
         <div className="logo">QuickChows</div>
-        <label for="toggle" className="label">
+        <label htmlFor="toggle" className="label">
           &#9776;
         </label>
         <input type="checkbox" id="toggle" />
@@ -15,12 +15,7 @@ function Navbar() {
           <Link to={"/"}>Home</Link>
           <Link to={"/blog"}>Blog</Link>
           <Link to={"/contact-us"}>Partner With Us</Link>
-          <Link className="onboard-log" to={"/login"}>
-            Login
-          </Link>
-          <Link className="onboard-sign" to={"/signup"}>
-            Sign Up
-          </Link>
+          
         </nav>
       </header>
     </Fragment>

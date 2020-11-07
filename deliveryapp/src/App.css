@@ -25,9 +25,9 @@ h6 {
 
 body {
 	line-height: 30px;
-	font-family: Helvetica, sans-serif;
+	font-family: "Noto Sans JP", sans-serif;
+	/* font-family: Helvetica, sans-serif; */
 }
-/*font-family: 'Noto Sans JP', sans-serif;*/
 button {
 	background-color: rgb(5, 5, 150);
 	border-radius: 3px;

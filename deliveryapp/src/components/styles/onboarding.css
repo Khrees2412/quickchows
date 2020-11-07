@@ -59,3 +59,12 @@
 	text-align: center;
 	margin-left: 5px;
 }
+@media only screen and (min-width: 1200px) {
+	.sign-box,
+	.login-box {
+		width: 75%;
+	}
+	.btn {
+		padding: 30px;
+	}
+}

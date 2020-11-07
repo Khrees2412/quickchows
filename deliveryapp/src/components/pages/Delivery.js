@@ -20,13 +20,18 @@ class Home extends Component {
 								Don't fret, we got you. <br />
 								Trust us to give you the best food service.
 							</p>
-							<h4>
-								Food at the speed of light
-								<i class="fas fa-thunderstorm    "></i>
-							</h4>
-							<Link to="/offers" id="link">
+							<h4>Food at the speed of light</h4>
+							{/* <Link to="/offers" id="link">
 								View Our Offers
-							</Link>
+							</Link> */}
+							<div className="join">
+								<Link className="onboard-log" to={"/login"}>
+									Log In
+								</Link>
+								<Link className="onboard-sign" to={"/signup"}>
+									Sign Up
+								</Link>
+							</div>
 						</div>
 					</div>
 
@@ -55,21 +60,36 @@ class Home extends Component {
 								alt="Anywhere you are in town"
 							/>
 							<p>
-								Food from where you want, when you want,
-								wherever you want!
+								Ut pariatur velit laborum nulla non in. Sunt
+								pariatur ut adipisicing cillum ullamco magna
+								laborum do velit et. Magna sint fugiat laboris
+								aliqua sint eiusmod.
+								{/* Food from where you want, when you want,
+								wherever you want! */}
 							</p>
 						</div>
 						<br />
 						<div className="usp card">
 							<img src={Location} alt="The best staff" />
-							<p>Highly trained for best service</p>
+							<p>
+								Ut pariatur velit laborum nulla non in. Sunt
+								pariatur ut adipisicing cillum ullamco magna
+								laborum do velit et. Magna sint fugiat laboris
+								aliqua sint eiusmod.
+							</p>
+
+							{/* <p>Highly trained for best service</p> */}
 						</div>
 						<br />
 						<div className="usp card">
 							<img src={Order} alt="Trustworthy orders" />
 							<p>
-								Make an order you can trust, satisfying your
-								hunger and thirst in an instant
+								Ut pariatur velit laborum nulla non in. Sunt
+								pariatur ut adipisicing cillum ullamco magna
+								laborum do velit et. Magna sint fugiat laboris
+								aliqua sint eiusmod.
+								{/* Make an order you can trust, satisfying your
+								hunger and thirst in an instant */}
 							</p>
 						</div>
 					</div>

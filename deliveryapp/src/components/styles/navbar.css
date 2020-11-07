@@ -1,70 +1,60 @@
-.logo{
-  color: yellow;
-  font-weight: 700;
+.logo {
+	color: yellow;
+	font-weight: 700;
 }
 
-.main-nav{
-  display: flex;
-  justify-content: space-around;
-  margin: 0;
-  background-color: navy;
-  padding: 20px;
+.main-nav {
+	display: flex;
+	justify-content: space-around;
+	margin: 0;
+	background-color: navy;
+	padding: 20px;
 }
 .menu {
-  margin: auto 15px;
-  color: yellow;
+	margin: auto 15px;
+	color: yellow;
 }
-.menu a{
-  margin: auto 15px;
+.menu a {
+	margin: auto 15px;
 }
-.onboard-log{
-  color: whitesmoke;
+.label,
+#toggle {
+	display: none;
+	font-size: 24px;
+	color: black;
 }
-.onboard-sign{
-  color: black;
-  border: 1px solid yellow;
-  background: yellow;
-  border-radius: 5px;
-  padding: 7px;
-}
-.label,#toggle{
-  display: none;
-  font-size: 24px;
-  color:black;
-}
-@media only screen and (max-width:768px){  
-  #toggle{
-      display: none;
-      font-size: 24px;
-      color:black;
-      margin: auto;
-  }
-  .label{
-      display: inline-block;
-      font-size: 30px;
-      color:yellow;
-      margin: auto;
-      border: 1px solid black;
-      padding: 5px;
-      margin-right: 0;
-  }
-  .label:hover{
-      color: blue;
-  }
-  .menu{
-      display: none;
-  }
-  #toggle:checked + .menu{
-      display: flex;
-      flex-direction: column;
-      margin: auto 20px;  
-  }
-  #toggle:checked + .label {
-          color: red;
-          outline: thick red;
-  }
-  #toggle:checked + .menu a{
-      margin:5px 5px 5px 20px;
-      
-  }
+@media only screen and (max-width: 768px) {
+	#toggle {
+		display: none;
+		font-size: 24px;
+		color: black;
+		margin: auto;
+	}
+	.label {
+		display: inline-block;
+		font-size: 30px;
+		color: yellow;
+		margin: auto;
+		border: 1px solid black;
+		padding: 5px;
+		margin-right: 0;
+	}
+	.label:hover {
+		color: blue;
+	}
+	.menu {
+		display: none;
+	}
+	#toggle:checked + .menu {
+		display: flex;
+		flex-direction: column;
+		margin: auto 20px;
+	}
+	#toggle:checked + .label {
+		color: red;
+		outline: thick red;
+	}
+	#toggle:checked + .menu a {
+		margin: 5px 5px 5px 20px;
+	}
 }
