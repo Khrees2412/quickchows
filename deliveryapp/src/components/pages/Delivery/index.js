@@ -1,11 +1,11 @@
 import React, { Component, Fragment } from "react";
-import "../styles/delivery.css";
+import "./delivery.css";
 import { Link } from "react-router-dom";
-import Navbar from "../layouts/Navbar";
-import Footer from "../layouts/Footer";
-import Delivery from "../assets/two-plates.jpg";
-import Order from "../assets/safe-delivery.jpg";
-import Location from "../assets/pizza.jpg";
+import Navbar from "../../layouts/Navbar";
+import Footer from "../../layouts/Footer";
+import Delivery from "../../assets/two-plates.jpg";
+import Order from "../../assets/safe-delivery.jpg";
+import Location from "../../assets/pizza.jpg";
 
 class Home extends Component {
 	render() {

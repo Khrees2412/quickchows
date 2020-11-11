@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import "../styles/onboarding.css";
+import "./onboarding.css";
 import Footer from "../layouts/Footer";
 
 export function Signup() {

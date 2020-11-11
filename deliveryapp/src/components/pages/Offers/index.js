@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
-import Footer from "../layouts/Footer";
-import { Breakfast, Lunch, Dinner } from "./Menu";
+import Footer from "../../layouts/Footer";
+import { Breakfast, Lunch, Dinner } from "../Menu";
 
 export default function Offers() {
 	return (

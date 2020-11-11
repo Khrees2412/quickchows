@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Navbar from "../layouts/Navbar";
+import Navbar from "../../layouts/Navbar";
 //import {Link} from "react-router-dom"
-import "../styles/blog.css";
+import "./blog.css";
 
 function Blog() {
 	/*
