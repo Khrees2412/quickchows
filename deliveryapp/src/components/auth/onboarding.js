@@ -34,27 +34,27 @@ export function Signup() {
 						<label>Name: </label>
 						<input type="text" name="name" />
 					</div>
-					<br />
+
 					<div className="form-input">
 						<label>Phone Number: </label>
 						<input type="tel" name="tel" />
 					</div>
-					<br />
+
 					<div className="form-input">
 						<label>Email: </label>
 						<input type="email" name="email" />
 					</div>
-					<br />
+
 					<div className="form-input">
 						<label>Password: </label>
 						<input type="password" name="pwd" />
 					</div>
-					<br />
+
 					<div className="form-input">
 						<label>Confirm Password: </label>
 						<input type="password" name="pwd" />
 					</div>
-					<br />
+
 					<button className="btn" type="submit">
 						Sign Up
 					</button>

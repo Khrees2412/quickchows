@@ -6,11 +6,12 @@ router.get("/signup", (req, res) => {
 });
 
 router.post("/signup", (req, res) => {
-  const { name, email, password } = req.body;
+  const { name, email, password, phoneNumber } = req.body;
   const userDetails = {
     email,
     name,
     password,
+    phoneNumber
   };
   const user = User.find({ email });
   if (!user) {

@@ -14,7 +14,7 @@ function Partners() {
 				<form action="/contact" method="POST" onSubmit={handleSubmit}>
 					<h4 className="h4"> Send us a mail</h4>
 					<div className="form-control">
-						<label for="name">Your Name:</label>
+						<label htmlFor="name">Name:</label>
 						<input
 							className="input"
 							type="text"
@@ -22,7 +22,7 @@ function Partners() {
 						/>
 					</div>
 					<div className="form-control">
-						<label for="email">Your Email:</label>
+						<label htmlFor="email">Email:</label>
 						<input
 							className="input"
 							type="email"
@@ -30,7 +30,7 @@ function Partners() {
 						/>
 					</div>
 					<div className="form-control">
-						<label for="message">Your Message:</label>
+						<label htmlFor="message">Message:</label>
 						<textarea
 							className="input"
 							placeholder="It should be brief and straight to the point"
